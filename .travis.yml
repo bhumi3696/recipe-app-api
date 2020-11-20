@@ -1,12 +1,14 @@
 language: python
 python:
-  - "3.6"
+    - "3.6"
 
 services:
-  - docker
+    - docker
+
+install:
+    - pipenv install
 
 before_script: pip install docker-compose
 
 script:
-  - "sh start_server.sh &"
-  - docker-compose run app sh -c "python manage.py test && flake8"
+    - docker-compose run app sh -c "python manage.py test && flake8"
