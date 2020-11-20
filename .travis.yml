@@ -4,6 +4,6 @@
  services:
     - docker
  before_script:
-    - pip install docker-compose
+    - py -m pip install docker-compose
  script:
     - docker-compose run app sh -c "py -m manage.py test"
