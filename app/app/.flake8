@@ -1,6 +1,7 @@
 [flake8]
-exclude =
-  migrations,
-  __pycache__,
-  manage.py,
-  settings.py
+    # exclude these directories for linting checks
+    exclude =
+      migrations,
+      __pycache__,
+      manage.py,
+      settings.py
