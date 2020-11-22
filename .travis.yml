@@ -6,6 +6,6 @@
  install:
     - pip install -r requirements.txt
  before_script:
-    - py -m pip install docker-compose
+    - pip install docker-compose
  script:
-    - docker-compose run app sh -c "py -m manage.py test"
+    - docker-compose run app sh -c "python manage.py test && flake8"
