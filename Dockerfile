@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-MAINTAINER Bhumi App Development Ltd
+MAINTAINER London App Developer Ltd
 
 ENV PYTHONUNBUFFERED 1
 
